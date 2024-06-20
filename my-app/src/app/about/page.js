@@ -12,8 +12,7 @@ const About = () => {
     return (
         <>
             <h1>hi from About</h1>
-            <h1>hiii
-            </h1>
+
             {/* <Link href={'/login'}><button>go to login page</button></Link> */}
             <button onClick={() => navigate('/login')}>go to login page</button>
         </>
