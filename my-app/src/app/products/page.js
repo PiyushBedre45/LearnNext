@@ -34,6 +34,7 @@
 
 import axios from 'axios';
 import React from 'react'
+import PriceBtn from './price';
 
 const getData = async () => {
     let response = await axios.get('https://dummyjson.com/products')
@@ -47,7 +48,10 @@ const Products = async () => {
         <div>
             {
                 products.map((item) => (
-                    <h1>{item.title}</h1>
+                    <>
+                        <h1>{item.title}</h1>
+                        <PriceBtn price={item.price} />
+                    </>
                 ))
             }
         </div>
