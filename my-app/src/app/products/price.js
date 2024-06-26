@@ -9,4 +9,10 @@ const PriceBtn = ({ price }) => {
     )
 }
 
-export default PriceBtn
+export default PriceBtn;
+
+
+
+
+
+
