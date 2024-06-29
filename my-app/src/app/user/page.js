@@ -3,7 +3,7 @@ import React from 'react'
 const Page = () => {
     return (
         <div>
-            hi ji
+            hi from user
         </div>
     )
 }
