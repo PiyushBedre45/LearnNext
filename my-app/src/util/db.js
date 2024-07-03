@@ -13,6 +13,6 @@ export const user = [
     },
     {
         id: 4,
-        name: 'ad'
+        name: 'adi'
     }
 ]
