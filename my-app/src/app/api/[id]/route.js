@@ -14,3 +14,15 @@ export function GET(req, res) {
     // return NextResponse.json(userData.length == !0 ? { result: userData } : { result: "Data not found" })
 
 }
+
+export async function PUT(req, res) {
+    let payload = await req.json()
+    let userId = res.params.id; // Taking id froms params
+    payload.id = userId;
+    if (!payload.id || !payload.name) {
+        return NextResponse.json({ result: false, message: "All Entries should be there" }, { status: false })
+
+    }
+    return NextResponse.json({ result: true, payload })
+
+}

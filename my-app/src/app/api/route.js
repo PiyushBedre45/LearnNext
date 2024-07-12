@@ -13,5 +13,5 @@ export async function POST(req) {
     if (!payload.result) {
         return NextResponse.json({ result: "enter proper entries" })
     }
-    return NextResponse.json({ result: "hi piyush" })
+    return NextResponse.json({ payload })
 }
