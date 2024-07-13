@@ -19,8 +19,9 @@ const Mentors = () => {
             {
                 mentors.map((mens, index) => (
 
-                    <div key={mens.id}>
+                    <div key={mens.id} className='flex gap-4'>
                         <Link href={`/mentors/${mens.id}`}><h1 >{mens.name}</h1></Link>
+                        <Link className='text-blue-600' href={`/mentors/${mens.id}/update`}> Edit</Link>
 
                     </div>
 

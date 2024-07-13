@@ -1,18 +1,26 @@
 export const user = [
     {
         id: 1,
-        name: 'piyush'
+        name: 'piyush',
+        age: 20,
+        email: "piyu@gmail.com"
     },
     {
         id: 2,
-        name: 'yash'
+        name: 'yash',
+        age: 20,
+        email: "piyu@gmail.com"
     },
     {
         id: 3,
-        name: 'panda'
+        name: 'panda',
+        age: 20,
+        email: "piyu@gmail.com"
     },
     {
         id: 4,
-        name: 'adi'
+        name: 'adi',
+        age: 20,
+        email: "piyu@gmail.com"
     }
 ]
