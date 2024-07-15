@@ -25,3 +25,14 @@ export async function PUT(req, res) {
     return NextResponse.json({ result: true, payload })
 
 }
+
+export function DELETE(req, res) {
+    let id = res.params.id;
+    if (id) {
+        return NextResponse.json({ result: "user Delete", success: true }, { status: 200 })
+    }
+    else {
+
+        return NextResponse.json({ result: "Invalid user ", success: false }, { status: 200 })
+    }
+}

@@ -4,6 +4,8 @@ import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 
 const Mentors = () => {
+
+
     const [mentors, setMentors] = useState([])
     const getMentors = async () => {
         let response = await axios.get(`http://localhost:3000/api`)
@@ -13,6 +15,9 @@ const Mentors = () => {
     useEffect(() => {
         getMentors()
     }, [])
+
+
+
     return (
         <>
             <h1>All Mentors</h1>

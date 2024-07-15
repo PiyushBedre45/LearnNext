@@ -19,6 +19,8 @@ const UpdateUserDetails = ({ params }) => {
 
     }
 
+
+    // Updating the user detail with Put MEthod
     const changeUserDetail = async () => {
         try {
             const result = await axios.put(`http://localhost:3000/api/${id}`, {
